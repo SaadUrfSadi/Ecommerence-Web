@@ -5,6 +5,9 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Products from './Pages/Products';
+import Cart from './Pages/Cart';
+import LoginSigup from './Pages/LoginSigup';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 
@@ -20,7 +23,10 @@ function App() {
       <Route path="/kids" element={ <ShopCategory categpry="kids"/> } />
       <Route path='/product' element={ <Products/> }  />
        <Route path=':productId' element={ <Products/> } />
+       <Route path="/cart" element={ <Cart/> } />
+       <Route path="/login" element={ <LoginSigup/> } />
      </Routes>
+     <Footer/>
     </BrowserRouter>
     </div>
     </>
@@ -28,4 +34,3 @@ function App() {
 }
 
 export default App
-  
