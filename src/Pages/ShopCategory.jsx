@@ -5,9 +5,7 @@ import dropdown_icon from "../Components/Assets/dropdown_icon.png";
 import Item from "../Components/Item/Item";
 
 function ShopCategory(props) {
-  console.log(props.banner);
   const { all_product } = useContext(ShopContext);
-  console.log(all_product)
 
   return (
     <>
